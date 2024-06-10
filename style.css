@@ -1,0 +1,107 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  /* position: fixed;
+  width: 100%; */
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+button {
+  background-color: #04ddb2;
+  border: none;
+  width: 129px;
+  height: 48px;
+  border-radius: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+section {
+  margin: 2rem;
+
+  background-color: red;
+  height: 100vh;
+}
+
+.container {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  border-style: solid;
+  border-width: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 50px); /*same as below*/
+  grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+.item {
+  background-color: rgb(221, 195, 102);
+  border: red solid none;
+  width: 50px;
+  height: 50px;
+}
+.item-2 {
+  grid-column: 2/3; /* This is shortcut techniqe */
+  grid-row: 2/3;
+  /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+}
+
+.item-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.item-4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.item-5 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+div {
+  position: fixed;
+  width: 100%;
+}
+
+.lobeImg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 80px;
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+.heading:hover {
+  font-size: 60px;
+  cursor: pointer;
+  color: blueviolet;
+}
